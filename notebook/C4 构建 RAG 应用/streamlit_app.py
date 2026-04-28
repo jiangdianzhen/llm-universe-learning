@@ -105,8 +105,13 @@ def main():
             chat_history=st.session_state.messages
         )
         with messages.chat_message("ai"):
-            output = st.write_stream(answer)
+            if answer:
+                output = st.write_stream(answer)
+            else:
+                output = "抱歉，未获取到回复。"
+                st.write(output)
         st.session_state.messages.append(("ai", output))
+
 
 
 if __name__ == "__main__":
