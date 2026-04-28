@@ -14,5 +14,6 @@ zhipuai==2.1.5.20250106
 streamlit==1.43.0
 #jieba==0.42.1
 #pydantic==2.10.6
-chromadb
-python-dotenv
+chromadb==0.5.4
+python-dotenv==1.0.1
+tokenizers==0.19.1
